@@ -33,6 +33,10 @@ platformio run --environment viditel-modem-emulator
 platformio run --target upload --environment viditel-modem-emulator
 ```
 
+## Install Firmware
+
+[![Install via Browser](https://img.shields.io/badge/ESP32-Install_via_Browser-blue?style=for-the-badge&logo=espressif)](https://bekkie.github.io/P2000T-M2009-cartridge/)
+
 ![Viditel modem emulator](../img/viditel-modem-emulator.png)
 
 ## Serial modem behavior

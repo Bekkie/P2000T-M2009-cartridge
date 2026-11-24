@@ -41,7 +41,7 @@ void phoneOnHookOther()
 void startOtherConnection(int serverId)
 {
     // Implementation for starting an other connection
-    if ((serverId < 0 || serverId > MAX_PHONEBOOK_ITEMS) && phonebook[serverId].type != ServerType::OTHER) {
+    if (serverId < 0 || serverId >= MAX_PHONEBOOK_ITEMS || phonebook[serverId].type != ServerType::OTHER) {
         LOGOTH("Invalid server ID: %d", serverId);
         teletextInfoPage(ERROR_PAGE_TITLE, "Onbekende server ID", "Maak een nieuwe keuze aub");
         return;
