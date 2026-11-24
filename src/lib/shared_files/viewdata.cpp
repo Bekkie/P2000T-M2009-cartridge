@@ -69,7 +69,7 @@ void disconnectViewdata()
 void startViewdataConnection(int serverId)
 {
     // Implementation for starting a viewdata connection
-    if ((serverId < 0 || serverId >= MAX_PHONEBOOK_ITEMS) && phonebook[serverId].type != ServerType::VIEWDATA) {
+    if ((serverId < 0 || serverId > MAX_PHONEBOOK_ITEMS) && phonebook[serverId].type != ServerType::VIEWDATA) {
         LOGVD("Invalid server ID: %d", serverId);
         teletextInfoPage(ERROR_PAGE_TITLE, "Onbekende server ID", "Maak een nieuwe keuze aub");
         return;

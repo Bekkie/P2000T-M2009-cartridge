@@ -332,7 +332,7 @@ void handleTeletextPageReload()
 
 void startTeletextConnection(int serverId)
 {
-    if ((serverId < 0 || serverId >= MAX_PHONEBOOK_ITEMS) && phonebook[serverId].type != ServerType::TELETEXT) {
+    if ((serverId < 0 || serverId > MAX_PHONEBOOK_ITEMS) && phonebook[serverId].type != ServerType::TELETEXT) {
         LOGTXT("Invalid server ID: %d", serverId);
         teletextInfoPage(ERROR_PAGE_TITLE, "Onbekende server ID", "Maak een nieuwe keuze aub");
         return;

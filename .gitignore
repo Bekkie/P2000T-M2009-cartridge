@@ -1,3 +1,6 @@
 .pio/
 .vscode/
 src/ftpclient/ftp-client.obj
+pcb/*/*.lck
+pcb/*/*backups/
+*.bak
