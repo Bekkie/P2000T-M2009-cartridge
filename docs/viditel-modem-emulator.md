@@ -1,6 +1,17 @@
 # Viditel modem emulator
 
-The Viditel modem emulator is an ESP32-based serial V.24 modem replacement for the P2000T. It connects the P2000T's 1200/75-baud serial link to Wi-Fi and to Viewdata, Teletekst, and generic TCP services.
+The Viditel modem emulator is an ESP32-based serial V.24 modem replacement for the P2000T. It connects the P2000T's 1200/75-baud serial link to Wi-Fi and to Viewdata, Teletekst, and generic TCP services. It began as a by-product of my M2009 project, and more than 90% of its software is reused from that project.
+
+The modem is not limited to use with the P2000T. Other computers may also work if they have a compatible serial interface and suitable Viditel or Viewdata software. Examples include:
+
+- MSX
+- :YES
+- VT100 terminals (the internal menu may not display as intended)
+- MS-DOS PCs
+- Windows PCs (using a client such as [Telstar](https://glasstty.com/jottings/telstar-client))
+- Commodore 64 and Amiga
+- Atari ST
+
 
 ![VIDEL modem ](../img/viditelmodem.jpeg)
 

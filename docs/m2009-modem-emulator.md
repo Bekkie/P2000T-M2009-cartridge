@@ -34,7 +34,7 @@ The emulator implements the M2009 I/O ports used by the P2000T:
 | `0x43` | SCC Channel B data |
 | `0x44`–`0x47` | Phone line control and special speed-dial commands |
 
-The status and line-control bits provide detection, carrier, transmitter, hook, and dialing behavior expected by P2000T software. Channel B/port `0x42` is also used for M2009 detection.
+The status and line-control bits provide detection, carrier, transmitter, hook, and dialing behavior expected by P2000T software. 
 
 ## Dialing
 
